@@ -11,7 +11,6 @@
 	</head>
 
     <body>
-
         <!-- Website Title -->
 		<div class="container">
             <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
@@ -19,23 +18,19 @@
     			<p>Diabetes Web App</p>
     		</div>
     	</div>
-
-		<!-- Result -->
-		<div class="results">
-			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
-			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
-				<img class="gif1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
-			{% endif %}
-		</div>
-
-		<!-- Footer -->
+        <!-- Result -->
+	<div class="results">
+		{% if prediction==1 %}
+			<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
+			<img class="gif" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
+		{% elif prediction==0 %}
+			<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+			<img class="gif1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
+		{% endif %}
+	</div>
+       <!-- Footer -->
        <div class='footer'>
-           
-           <p class='footer-description'>Made by Geetha, Swathi, Santhoshi</p>
+          <p class='footer-description'>Made by Geetha, Swathi, Santhoshi</p>
        </div>
-
-	</body>
+     </body> 
 </html>
