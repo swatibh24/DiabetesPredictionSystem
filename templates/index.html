@@ -9,9 +9,7 @@
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     </head>
-
     <body>
-
         <!-- Website Title -->
     	<div class="container">
             <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
@@ -19,7 +17,6 @@
     			<p>Diabetes Web App</p>
     		</div>
     	</div>
-
         <!-- Text Area -->
     	<div class="ml-container">
     		<form action="{{ url_for('predict') }}" method="POST">
@@ -31,16 +28,12 @@
                 <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
                 <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
                 <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
-
         		<input type="submit" class="predict-button" value="Predict">
         	</form>
     	</div>
-
         <!-- Footer -->
-       <div class='footer'>
-           
+       <div class='footer'>           
            <p class='footer-description'>Made by Geetha, Swathi, Santhoshi</p>
        </div>
-
     </body>
 </html>
